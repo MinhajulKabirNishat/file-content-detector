@@ -6,6 +6,7 @@ AI-Powered File Content Type Detection
 This project detects the real content type of a file by analyzing its actual data, not just the file extension.
 It helps identify whether a file is a PDF, image, text, audio, video, or other type — even if the file name is misleading.
 
+
 🟢 BEGINNER LEVEL
 
 Detect file types using file content (magic numbers / headers) instead of file extensions.
@@ -18,7 +19,7 @@ Detect file types using file content (magic numbers / headers) instead of file e
 
 -Return the detected file type
 
-🛠 Technologies Used
+# Technologies Used
 
 -Python
 
@@ -34,6 +35,7 @@ Detect file types using file content (magic numbers / headers) instead of file e
 
 -Accurate for common file types
 
+
 🟡 INTERMEDIATE LEVEL 
 
 Improve detection using machine learning when rule-based detection fails.
@@ -48,7 +50,7 @@ Improve detection using machine learning when rule-based detection fails.
 
 -Use ML model to predict type
 
-🛠 Technologies Used
+# Technologies Used
 
 -Python
 
@@ -58,7 +60,7 @@ Improve detection using machine learning when rule-based detection fails.
 
 -Pandas
 
-🧪 Features Used for ML
+# Features Used for ML
 
 -Byte frequency
 
@@ -75,6 +77,7 @@ Improve detection using machine learning when rule-based detection fails.
 -Higher accuracy
 
 -Handles unknown or corrupted files
+
 
 🔴 ADVANCED LEVEL (Coming Soon)
 
