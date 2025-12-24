@@ -24,19 +24,6 @@ Detect file types using file content (magic numbers / headers) instead of file e
 
 -Built-in file handling
 
-📂 Project Structure
-file-type-detector/
-│
-├── detector.py
-├── samples/
-│   ├── sample.pdf
-│   ├── image.png
-│   └── text.txt
-└── README.md
-
-▶ How to Run
-python detector.py samples/sample.pdf
-
 # Features
 
 -Fast detection
@@ -46,9 +33,6 @@ python detector.py samples/sample.pdf
 -No AI / ML required
 
 -Accurate for common file types
-
-📌 Example Output
-Detected File Type: PDF Document
 
 🟡 INTERMEDIATE LEVEL 
 
@@ -74,23 +58,6 @@ Improve detection using machine learning when rule-based detection fails.
 
 -Pandas
 
-📂 Project Structure
-file-type-detector/
-│
-├── rules/
-│   └── magic_detector.py
-├── ml/
-│   ├── feature_extractor.py
-│   ├── train_model.py
-│   └── model.pkl
-├── dataset/
-│   ├── pdf/
-│   ├── png/
-│   ├── jpg/
-│   └── txt/
-├── main.py
-└── README.md
-
 🧪 Features Used for ML
 
 -Byte frequency
@@ -100,9 +67,6 @@ file-type-detector/
 -Entropy
 
 -Text patterns
-
-▶ How to Run
-python main.py samples/unknown_file
 
 # Features
 
