@@ -9,67 +9,68 @@ It helps identify whether a file is a PDF, image, text, audio, video, or other t
 # LEVEL 1(Completed)
 Detect file types using file content (magic numbers / headers) instead of file extensions.
 
-# How it Works (Simple)
--Read the first few bytes of a file
--Match known file signatures (magic numbers)
+<b>How it Works (Simple)</b><br>
+-Read the first few bytes of a file<br>
+-Match known file signatures (magic numbers)<br>
 -Return the detected file type
 
-# Technologies Used-Python
+<b>Technologies Used-Python</b><br>
 -Built-in file handling
 
-# Features
--Fast detection
--Beginner-friendly
--No AI / ML required
+<b>Features</b><br>
+-Fast detection<br>
+-Beginner-friendly<br>
+-No AI / ML required<br>
 -Accurate for common file types
 
 # LEVEL 2(Completed)
 Improve detection using machine learning when rule-based detection fails.
 
-# How it Works
--Try rule-based detection (magic numbers)
--If unknown:
--Extract features from file
--Use ML model to predict type
+<b>How it Works</b><br>
+-Try rule-based detection (magic numbers)<br>
+-If unknown:<br>
+-Extract features from file<br>
+-Use ML model to predict type<br>
 
-# Technologies Used
--Python
--scikit-learn
--NumPy
+<b>Technologies Used</b><br>
+-Python<br>
+-scikit-learn<br>
+-NumPy<br>
 -Pandas
 
-# Features Used for ML
--Byte frequency
--File size
--Entropy
+<b>Features Used for ML</b><br>
+-Byte frequency<br>
+-File size<br>
+-Entropy<br>
 -Text patterns
 
-# Features
--Rule-based + ML hybrid system
--Higher accuracy
--Handles unknown or corrupted files
+ <b>Features</b><br>
+-Rule-based + ML hybrid system<br>
+-Higher accuracy<br>
+-Handles unknown or corrupted files<br>
+<br>
 
-
+  
 # LEVEL 3(Completed)
 Build a high-performance, production-ready file type detection system.
 
-# How it Works
-The system operates on a Fail-Fast, Deep-Inspect hierarchy. Every file uploaded to the API passes through three distinct layers of analysis:
-Layer 1: Rule-Based (The Sprint)
-Layer 2: Statistical Verification (The Check)
+<b>How it Works</b><br>
+The system operates on a Fail-Fast, Deep-Inspect hierarchy. Every file uploaded to the API passes through three distinct layers of analysis:<br>
+Layer 1: Rule-Based (The Sprint)<br>
+Layer 2: Statistical Verification (The Check)<br>
 Layer 3: ML/Deep Learning Fallback (The Brain)
 
-# Tech Stack
--API Framework: FastAPI
--Rule Engine: python-magic
--Machine Learning: PyTorch (Inference) & scikit-learn (Feature extraction)
--Containerization: Docker + Multi-stage builds
--Performance: Uvicorn with uvloop for lightning-fast event loops.
+<b>Tech Stack</b><br>
+-API Framework: FastAPI<br>
+-Rule Engine: python-magic<br>
+-Machine Learning: PyTorch (Inference) & scikit-learn (Feature extraction)<br>
+-Containerization: Docker + Multi-stage builds<br>
+-Performance: Uvicorn with uvloop for lightning-fast event loops.<br>
 
-# Key Features
-# Performance & Scale
--Async I/O: Fully non-blocking architecture allows the API to handle thousands of concurrent requests.
--Batch Processing: Dedicated endpoint to process multiple files in a single multipart request.
+<b>Key Features</b><br>
+<b>Performance & Scale</b><br>
+-Async I/O: Fully non-blocking architecture allows the API to handle thousands of concurrent requests.<br>
+-Batch Processing: Dedicated endpoint to process multiple files in a single multipart request.<br>
 -Memory Optimized: Streams files instead of loading them entirely into RAM, allowing for the analysis of GB-sized files on low-resource containers.
 
 
